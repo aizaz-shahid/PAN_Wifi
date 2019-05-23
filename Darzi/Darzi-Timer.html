@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet2.css">
+<meta charset="utf-8">
+<title>PAN Wifi</title>
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/bootstrap-social.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/assets/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/bootstrap-social.less">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<script src="../WOW-master/dist/wow.min.js"></script>
+
+</head>
+
+<body>
+<div class="container-fluid" style="position:relative;min-height:100%">
+<div id="body" style="padding-bottom:70px">
+<header>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+    
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+
+    <div  id="bs-example-navbar-collapse-1" >
+        <ul class="nav navbar-nav " style="margin-left:20px">
+            <li><a href="/">Home</a></li>
+            <li><a href="~/About/Index">About</a></li>
+            <li><a href="~/Contact/Index">Contacts</a></li>
+        </ul>
+    
+
+
+        <ul class="nav navbar-nav navbar-right " style="margin-right:20px;margin-left:20px">
+            <li><a href="/">Sign in</a></li>
+            <li><a href="~/About/Index">Create Account</a></li>
+            <li><a href="~/Contact/Index">Contact us</a></li>
+        </ul>
+    </div>
+        
+</nav>
+</header>
+
+
+    <div class="row fadeInDown animated" style="margin-top:80px">
+        <div class="col-md-3 col-md-push-9 col-sm-4 col-sm-push-8 col-xs-6 col-xs-push-6 wow bounce animated" data-wow-delay="1s">
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="fb" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-facebook"></i></button>&nbsp;
+            
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="twitter" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-twitter"></i></button>&nbsp;
+            
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="whatsapp" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-whatsapp"></i></button>&nbsp;
+            
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="google" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-google"></i></button>&nbsp;
+
+        </div>
+    </div>
+	
+    <div style="height:auto;width:auto;margin-left:30%;margin-top:5px" class="fadeInDown animated">
+    	<img src="logo.jpg" class="img-responsive" style="height:300px;width:300">
+    </div>
+    
+    <div class="links_button fadeInRight animated">
+   		<a href="#" class="btn btn-primary"><i class="fa fa-phone sr-contact"></i>&nbsp;+92 313 4225777</a>
+
+	</div>
+    
+    
+    
+	<div class="row">
+    	<div class="col-md-4 col-md-push-4	 col-sm-6 col-sm-push-4 col-xs-10 col-xs-push-2">
+        	<h2  style="font-family:Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', serif">&nbsp;Enter Your tracking ID</h2>	
+            
+    	</div>
+    </div>
+    <div class="row">
+    	<div class="col-md-3 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-6 col-xs-push-2">
+        	<input maxlength="6" type="text" name"tracking_id" placeholder="Enter ID" style="padding:5px;" required>
+        </div>
+        <div class="col-md-1 col-md-push-3 col-sm-1 col-sm-push-3 col-xs-3 col-xs-1">
+        	<a href="#" class="wow scroll animated" data-wow-delay="3s"><button id="toggle_btn" class="btn btn-success" style="margin-left:0px">Submit Code</button></a>
+        </div>
+    </div>
+ 	     
+    
+    
+ 
+ 	<div id="counter" class="row" style="margin-top:20px;display:none">
+ 		<div class="col-md-8 col-md-push-4 col-sm-8 col-sm-push-3 col-xs-8 col-xs-push-3">
+    		<h1>&nbsp;Countdown Clock</h1>
+            <div id="clockdiv">
+              <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+              </div>
+              <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+              </div>
+              <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+              </div>
+              <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+              </div>
+            </div>
+    	</div>
+	</div>    
+</div>
+<footer>
+	<div class="navbar navbar-default">
+    	<div class="container">
+        	<p style="padding-top:15px">copyright &copy; All rigths Reserved</p>
+        </div>
+    </div>
+    <a href="#" id="bottom"></a>
+</footer>
+
+</div>
+
+
+<script language="javascript" src="../jquery-2.2.0.min.js.pagespeed.jm.JkJ2MTTxir.js"></script>
+<script language="javascript" src="../js/bootstrap.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $("#toggle_btn").click(function(){
+        $("#counter").toggle(1000);
+    });
+});
+</script>
+<script>
+function getTimeRemaining(endtime) {
+  var t = Date.parse(endtime) - Date.parse(new Date());
+  var seconds = Math.floor((t / 1000) % 60);
+  var minutes = Math.floor((t / 1000 / 60) % 60);
+  var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+  var days = Math.floor(t / (1000 * 60 * 60 * 24));
+  return {
+    'total': t,
+    'days': days,
+    'hours': hours,
+    'minutes': minutes,
+    'seconds': seconds
+  };
+}
+
+function initializeClock(id, endtime) {
+  var clock = document.getElementById(id);
+  var daysSpan = clock.querySelector('.days');
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
+
+  function updateClock() {
+    var t = getTimeRemaining(endtime);
+
+    daysSpan.innerHTML = t.days;
+    hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+    minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+    secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+    if (t.total <= 0) {
+      clearInterval(timeinterval);
+    }
+  }
+
+  updateClock();
+  var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+</script>
+<script>
+$(document).ready(function(){
+	
+	$('#bottom')
+	//Click event to scroll to top
+	$('.scroll').click(function(){
+		$('html, body').animate(scroll(0,300),1000);
+		return false;
+	});
+	
+});
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

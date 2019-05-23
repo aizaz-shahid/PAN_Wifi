@@ -1,0 +1,78 @@
+button.btn-circle#fb:hover {
+ 	background-color:#3b5998;
+	color:white;
+	transition:all 500ms ease;
+}
+button.btn-circle#twitter:hover {
+ 	background-color:#008cbf;
+	color:white;
+	transition:all 500ms ease;
+}
+button.btn-circle#whatsapp:hover {
+ 	background-color:#43d854;
+	color:white;
+	transition:all 500ms ease;
+}
+button.btn-circle#google:hover {
+ 	background-color:#dd4b39;
+	color:white;
+	transition:all 500ms ease;
+}
+button.btn-block#male:hover {
+ 	background-color:#146eb4;
+	color:white;
+	transition:all 500ms ease;
+}
+button.btn-block#male{color:#146eb4;background-color:white;border:1px solid #146eb4;}
+button.btn-block#female:hover {
+ 	background-color:#fc636b;
+	color:white;
+	transition:all 500ms ease;
+}
+button.btn-block#female{color:#fc636b;background-color:white;border:1px solid #fc636b;}
+
+
+
+
+h1{
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #00BF96;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #00816A;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+
+.links_button{position:fixed;bottom:12%;left:85%;z-index:10;right:0%}
+
+
+footer{position:absolute;bottom:0;padding-left:0px;margin-left:0px;min-width:100%;width:100%;height:50px;background-color:rgb(221,221,221);color:rgb(0,0,0);}
+
+html,body{height:100%;padding:0px;margin:0px}

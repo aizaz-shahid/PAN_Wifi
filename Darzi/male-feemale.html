@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="stylesheet.css">
+<meta charset="utf-8">
+<title>PAN Wifi</title>
+
+<link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/bootstrap-social.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/assets/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/bootstrap-social.less">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
+<script src="../WOW-master/dist/wow.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="modal fade" id="female_modal" tabindex="-1" role="dialog"> 
+	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <p>Sory, Currently we are not providing services for females&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="close_modal" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->         
+</div>
+
+
+<div class="modal fade" id="male_modal" tabindex="-1" role="dialog"> 
+	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      	<p>Our man is on his way for taking measurement&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->         
+</div>  
+
+
+<div class="modal fade" id="submit_modal" tabindex="-1" role="dialog"> 
+	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      	<p>Thank You,<br>Your oredr has been submitted. 1321 is your order id, you can track your order progress when ever you want&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->         
+</div>  
+
+
+
+
+<div class="container-fluid" style="position:relative;min-height:100%">
+<div id="body" style="padding-bottom:70px">
+<header>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+    
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">PAN Wifi</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+        <ul class="nav navbar-nav " style="margin-left:20px">
+            <li><a href="/">Home</a></li>
+            <li><a href="~/About/Index">About</a></li>
+        </ul>
+    
+
+
+        <ul class="nav navbar-nav navbar-right " style="margin-right:20px;margin-left:20px">
+            <li><a href="/">Sign in</a></li>
+            <li><a href="~/About/Index">Create Account</a></li>
+            <li><a href="~/Contact/Index">Contact us</a></li>
+        </ul>
+    </div>
+        
+</nav>
+</header>
+
+
+    <div class="row fadeInDown animated" style="margin-top:80px">
+        <div class="col-md-3 col-md-push-9 col-sm-4 col-sm-push-8 col-xs-6 col-xs-push-6 wow bounce animated" data-wow-delay="1s" >
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="fb" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-facebook"></i></button>&nbsp;
+            
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="twitter" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-twitter"></i></button>&nbsp;
+            
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="whatsapp" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-whatsapp"></i></button>&nbsp;
+            
+            <button type="button" class="btn btn-default btn-circle btn-lg" id="google" style=" width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;"><i class="fa fa-google"></i></button>&nbsp;
+
+        </div>
+    </div>
+	
+    <div style="height:auto;width:auto;margin-left:30%;margin-top:5px" class="fadeInDown animated">
+    	<img src="logo.jpg" class="img-responsive" style="height:300px;width:300">
+    </div>
+    
+	
+ 	<div class="links_button fadeInRight animated">
+   		<a href="#" class="btn btn-primary"><i class="fa fa-phone sr-contact"></i>&nbsp;+92 313 4225777</a>
+
+	</div>
+ 	
+    
+ <div class="row" id="gender">
+ 	<div class="col-md-2 col-md-push-3 col-sm-3 col-sm-push-3 col-xs-3 col-xs-push-2">
+    	<img class="img-responsive" src="android-150x150.jpg">
+        <button type="button" class="btn btn-block" id="male" style=""><i class="fa fa-male"></i>&nbsp;Male</button>
+    </div>
+    <div class="col-md-2 col-md-push-5 col-sm-3 col-sm-push-5 col-xs-3 col-xs-push-6">
+    	<img class="img-responsive" src="android-150x150.jpg">
+        <button type="button" data-toggle="modal" data-target="#female_modal" class="btn btn-block" id="female" style=""><i class="fa fa-female"></i>&nbsp;Female</button>
+    </div> 
+</div>    
+
+<div id="m_toggle" style="padding-left:20%;display:none">
+<input type="checkbox" id="m_proc_1"> I have my own measurement<br>
+<input type="checkbox" data-toggle="modal" data-target="#male_modal" id="m_proc_2"> Take measurement<br>
+</div>
+
+<div class="jumbotron" id="suitcustopfieldbarman" style="display:none">
+		<div class="row">
+        	<div class="col-md-6">
+            	<h4>Already a customer?</h4>
+            </div>
+        </div>
+        <div class="row">
+        	<div class="col-md-6">
+            	<h5 style="color:rgb(136,136,136)">Click the button to retrieve past order measurements</h5>
+            </div>
+            <div class="col-md-2">
+            	<!--<input type="button" value="Retrieve" style="padding: 5px 8px !important;">-->
+                <div class="btn btn-bitbucket" id="retrieve">Retrieve</div>
+            </div>
+        </div>
+    </div>
+
+<div class="jumbotron" id="suitcusmanfields" style="margin-top:20px;display:none">
+
+        <div class="row">
+            <div class="col-md-7">
+                <ol>
+
+                  <div class="row visible-lg" style="margin-top: 50px; margin-bottom: 50px">
+                      <div class="col-md-7"><label class="fontstyleforformheading">Names</label></div>
+                      <div class="col-md-5"><label class="fontstyleforformheading">Size in Inches</label></div>
+                  </div>
+
+
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="ArmHole" class="fontstyleforform"><li>Arm Hole:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="ArmHole" placeholder="Arm Hole"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="Shoulderman" class="fontstyleforform"><li>Shoulder:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="Shoulderman" placeholder="Shoulder"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="CollarWidth" class="fontstyleforform"><li>Collar Width:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="CollarWidth" placeholder="Collar Width"></div>
+                  </div>
+
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="Chest" class="fontstyleforform"><li>Chest:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="Chest" placeholder="Chest"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="SleeveLengthman" class="fontstyleforform"><li>Sleeve Length:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="SleeveLengthman" placeholder="Sleeve Length"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="Waist" class="fontstyleforform"><li>Waist:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="Waist" placeholder="Waist"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="KameezLength" class="fontstyleforform"><li>Kameez Length:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="KameezLength" placeholder="Kameez Length"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="ChowkLength" class="fontstyleforform"><li>Chowk Length:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="ChowkLength" placeholder="Chowk Length"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="KameezTail" class="fontstyleforform"><li>Kameez Tail:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="KameezTail" placeholder="Kameez Tail"></div>
+                  </div>
+
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="ShalwarLength" class="fontstyleforform"><li>Shalwar Length:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="ShalwarLength" placeholder="Shalwar Length"></div>
+                  </div>
+
+                  <div class="row textfiledmargen smalldevicviewform" style="margin-top: 20px; margin-bottom: 20px">
+                      <div class="col-md-7"><label for="Ankleman" class="fontstyleforform"><li>Ankle:</li></label></div>
+                      <div class="col-md-5"><input type="text" class="form-control" id="Ankleman" placeholder="Ankle"></div>
+                  </div>
+
+
+              </ol>
+            </div>
+
+
+            <div class="col-md-5 visible-lg visible-md">
+                   <img src="man-chart.jpg" width="90%" height="80%">
+            </div>
+        </div>
+
+    </div>
+
+    <div id="altsuitcustmainman" style="display: none; padding: 20px; text-align: center; font-size: medium"></div>
+    <div style="text-align: center; margin: 20px; display: none;" id="altsuitcusloadingman">
+        <img src="assets/images/loading.gif">
+    </div>
+    
+    
+	<div class="jumbotron" id="day_selection" style="display:none">
+        <div style="margin-left: 10px; margin-right: 10px; margin-top: 20px">
+        	<div class="row">
+        		<div class="col-md-6">
+            		<h4>Want to be more Specific?</h4>
+            	</div>
+        	</div>
+            <input type="radio" id="1day"> Collar	&nbsp;
+            <input type="radio" id="1day"> Ban	&nbsp&nbsp&nbsp&nbsp&nbsp;<br>
+            <input type="radio" id="3day"> Pockets on Both Sides &nbsp&nbsp&nbsp&nbsp&nbsp;<br>
+            <input type="radio" id="5day"> Pocket in Shalwar &nbsp&nbsp&nbsp&nbsp&nbsp;<br>
+            <input type="radio" id="7day"> Double Coughs &nbsp&nbsp&nbsp&nbsp&nbsp;<br>
+            <input type="radio" id="5day"> Single Front Pocket &nbsp&nbsp&nbsp&nbsp&nbsp;<br>
+            <input type="radio" id="7day"> Double Front Pockets &nbsp&nbsp&nbsp&nbsp&nbsp;
+        </div>
+    </div>
+    
+    
+    <div class="jumbotron" id="Time_frame" style="display:none">
+        <div class="row" style="margin-left: 10px; margin-right: 10px; margin-top: 20px">
+            <div class="col-md-3" style="border-right:1px solid black">
+            	<div class="row">
+                	<div class="col-sm-6 col-sm-push-2">
+                    	<h3>24 Hours</h3>
+                        <h5 style="color:rgb(85,85,85)">75% more</h5>
+                        <input type="radio" id="7day"> Select
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="border-right:1px solid black">
+            	<div class="row">
+                	<div class="col-sm-6 col-sm-push-3">
+                    	<h3>3 Days</h3>
+                        <h5 style="color:rgb(85,85,85)">50% more</h5>
+                        <input type="radio" id="7day"> Select
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3" style="border-right:1px solid black">
+            	<div class="row">
+                	<div class="col-sm-6 col-sm-push-3">
+                    	<h3>5 Days</h3>
+                        <h5 style="color:rgb(85,85,85)">25% more</h5>
+                        <input type="radio" id="7day"> Select
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+            	<div class="row">
+                	<div class="col-sm-6 col-sm-push-3">
+                    	<h3>7 Days</h3>
+                        <h5 style="color:rgb(85,85,85)">Standard Rate</h5>
+                        <input type="radio" id="7day"> Select
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="jumbotron" id="suitcusbutdivman" style="display:none">
+        <div style="margin-left: 10px; margin-right: 10px; margin-top: 20px">
+            <button style="width:100%" class="buttons" id="submit_measurement" data-toggle="modal" data-target="#submit_modal">Form Submit</button>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+<footer>
+	<div class="navbar navbar-default">
+    	<div class="container">
+        	<p style="padding-top:15px;text-align:center">copyright &copy; All rigths Reserved</p>
+        </div>
+    </div>
+</footer>
+</div>
+
+<script language="javascript" src="../jquery-2.2.0.min.js.pagespeed.jm.JkJ2MTTxir.js"></script>
+<script language="javascript" src="../js/bootstrap.min.js"></script>
+<script>
+	new WOW().init();
+</script>
+<script>
+$(document).ready(function(){
+    $("#male").click(function(){
+        $("#gender").toggle(1000);
+		$("#m_toggle").toggle(1000);
+		
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#m_proc_1").click(function(){
+		$("#m_toggle").toggle(1000);
+		$("#suitcusmanfields").toggle(1000);
+		$("#suitcusbutdivman").toggle(1000);
+		$("#suitcustopfieldbarman").toggle(1000);
+		$("#day_selection").toggle(1000);
+		$("#Time_frame").toggle(1000);
+    });
+});
+</script>
+<script>
+$(document).ready(function(){
+    $("#close_modal").click(function(){
+        $("#m_toggle").toggle(1000);
+		
+    });
+});
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

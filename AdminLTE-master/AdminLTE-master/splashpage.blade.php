@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> | </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.5 -->
+<link href="{{ asset('/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
+  <link href="{{ asset('/dist/css/bootstrap-social.css') }}" rel="stylesheet" type="text/css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,100italic,300italic,400italic,700,700italic">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- jvectormap -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style type="text/css">
+  body{
+background: linear-gradient(
+      rgba(117,189,209, 0.9), 
+      rgba(117,189,209, 0.9)
+    ),
+url('dist/img/back_splash.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h1{
+  font-family:
+'Roboto',sans-serif;
+font-weight: 200;
+font-size: 72px;
+/*text-shadow: 5px 1px 2px rgba(150, 150, 150, 0.68);*/
+text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  }
+  h2{
+  font-family:
+'Roboto',sans-serif;
+font-weight: 200;
+font-size: 36px;
+/*text-shadow: 5px 1px 2px rgba(150, 150, 150, 0.68);*/
+
+  }
+  </style>
+
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper" style="text-align:center;">
+
+<div class="col-md-4 col-xs-10 col-xs-offset-1 col-md-offset-4" style="padding:15;top:50%;margin-top:-180px;position:absolute;">
+<div class="col-md-12" style="text-align:center;">
+<h1 style="color:#fff;">Impan</h1>
+<h2 style="color:#fff;">Free wifi connection</h2>
+</div>
+<div class="col-md-6 col-md-offset-3">
+  <a href="auth/facebook" class="btn btn-block btn-social btn-facebook"> <span class="fa fa-facebook"></span>login with facebook</a>
+  <p style="color:#fff;margin-top:5px;">By signing In, you agree to our terms of use, privacy policy</p>
+</div>
+  
+</div>
+
+ <script src="{{ asset ('/plugins/jQuery/jQuery-2.2.min.js') }}"></script>
+<!-- Bootstrap 3.3.5 -->
+<script src="{{ asset('/bootstrap/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
